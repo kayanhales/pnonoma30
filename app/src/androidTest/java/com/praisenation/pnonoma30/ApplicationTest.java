@@ -1,4 +1,4 @@
-package com.praisenation.onomo30;
+package com.praisenation.pnonoma30;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

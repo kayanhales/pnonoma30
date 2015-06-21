@@ -1,4 +1,4 @@
-package com.praisenation.onomo30;
+package com.praisenation.pnonoma30;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -38,8 +38,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.widget.Toast;
-import com.praisenation.onomo30.DBTools;
-import com.praisenation.onomo30.User;
 
 /**
  * A login screen that offers login via email/password and via Google+ sign in.

@@ -1,4 +1,4 @@
-package com.praisenation.onomo30;
+package com.praisenation.pnonoma30;
 
 import android.content.Intent;
 import android.os.Bundle;

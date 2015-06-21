@@ -1,9 +1,9 @@
-package com.praisenation.onomo30;
+package com.praisenation.pnonoma30;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v4.app.NavUtils;
+import android.support.v7.app.ActionBarActivity;
 import android.view.MenuItem;
 
 
@@ -16,12 +16,12 @@ import android.view.MenuItem;
  * This activity is mostly just a 'shell' activity containing nothing
  * more than a {@link HomeDetailFragment}.
  */
-public class HomeDetailActivity extends ActionBarActivity {
+public class DailyLogFormDetailActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home_detail);
+        setContentView(R.layout.activity_dailylog_form);
 
         // Show the Up button in the action bar.
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -39,12 +39,12 @@ public class HomeDetailActivity extends ActionBarActivity {
             // Create the detail fragment and add it to the activity
             // using a fragment transaction.
             Bundle arguments = new Bundle();
-            arguments.putString(HomeDetailFragment.ARG_ITEM_ID,
-                    getIntent().getStringExtra(HomeDetailFragment.ARG_ITEM_ID));
-            HomeDetailFragment fragment = new HomeDetailFragment();
+            arguments.putString(DailyLogFormFragment.ARG_ITEM_ID,
+                    getIntent().getStringExtra(DailyLogFormFragment.ARG_ITEM_ID));
+            DailyLogFormFragment fragment = new DailyLogFormFragment();
             fragment.setArguments(arguments);
             getSupportFragmentManager().beginTransaction()
-                    .add(R.id.home_detail_container, fragment)
+                    .add(R.id.dailylogform_detail_container, fragment)
                     .commit();
         }
     }

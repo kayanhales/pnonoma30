@@ -1,4 +1,4 @@
-package com.praisenation.onomo30;
+package com.praisenation.pnonoma30;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 
-import com.praisenation.onomo30.dummy.DummyContent;
+import com.praisenation.pnonoma30.dashboard.DashboardContent;
 
 /**
  * A list fragment representing a list of Home. This fragment
@@ -31,7 +31,7 @@ public class HomeListFragment extends ListFragment {
      * The fragment's current callback object, which is notified of list item
      * clicks.
      */
-    private Callbacks mCallbacks = sDummyCallbacks;
+    private Callbacks mCallbacks = sDashboardCallbacks;
 
     /**
      * The current activated item position. Only used on tablets.
@@ -54,7 +54,7 @@ public class HomeListFragment extends ListFragment {
      * A dummy implementation of the {@link Callbacks} interface that does
      * nothing. Used only when this fragment is not attached to an activity.
      */
-    private static Callbacks sDummyCallbacks = new Callbacks() {
+    private static Callbacks sDashboardCallbacks = new Callbacks() {
         @Override
         public void onItemSelected(String id) {
         }
@@ -72,11 +72,11 @@ public class HomeListFragment extends ListFragment {
         super.onCreate(savedInstanceState);
 
         // TODO: replace with a real list adapter.
-        setListAdapter(new ArrayAdapter<DummyContent.DummyItem>(
+        setListAdapter(new ArrayAdapter<DashboardContent.DashboardItem>(
                 getActivity(),
                 android.R.layout.simple_list_item_activated_1,
                 android.R.id.text1,
-                DummyContent.ITEMS));
+                DashboardContent.ITEMS));
     }
 
     @Override
@@ -107,7 +107,7 @@ public class HomeListFragment extends ListFragment {
         super.onDetach();
 
         // Reset the active callbacks interface to the dummy implementation.
-        mCallbacks = sDummyCallbacks;
+        mCallbacks = sDashboardCallbacks;
     }
 
     @Override
@@ -116,7 +116,7 @@ public class HomeListFragment extends ListFragment {
 
         // Notify the active callbacks interface (the activity, if the
         // fragment is attached to one) that an item has been selected.
-        mCallbacks.onItemSelected(DummyContent.ITEMS.get(position).id);
+        mCallbacks.onItemSelected(DashboardContent.ITEMS.get(position).id);
     }
 
     @Override

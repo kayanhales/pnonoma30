@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.praisenation.onomo30" >
+    package="com.praisenation.pnonoma30" >
 
     <!-- To access Google+ APIs: -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -16,7 +16,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="Onomo 30"
+        android:label="Onoma 30"
         android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
@@ -37,7 +37,7 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <application android:label="Onomo 30" >
+        <application android:label="Onoma 30" >
             <meta-data
                 android:name="com.facebook.sdk.ApplicationId"
                 android:value="@string/facebook_app_id" />
@@ -58,7 +58,7 @@
             android:parentActivityName=".HomeListActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.praisenation.onomo30.HomeListActivity" />
+                android:value=".HomeListActivity" />
         </activity>
     </application>
 

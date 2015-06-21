@@ -5,7 +5,7 @@ android {
     buildToolsVersion "22.0.1"
 
     defaultConfig {
-        applicationId "com.praisenation.onomo30"
+        applicationId "com.praisenation.pnonoma30"
         minSdkVersion 9
         targetSdkVersion 22
         versionCode 1
@@ -29,4 +29,5 @@ dependencies {
     compile 'com.google.android.gms:play-services:6.1.71'
     compile 'com.facebook.android:facebook-android-sdk:4.1.0'
     compile 'com.android.support:support-v4:22.1.1'
+    compile 'com.android.support:appcompat-v7:+'
 }

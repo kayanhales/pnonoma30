@@ -1,4 +1,4 @@
-package com.praisenation.onomo30;
+package com.praisenation.pnonoma30;
 
 /**
  * Created by kayanhales on 6/5/15.

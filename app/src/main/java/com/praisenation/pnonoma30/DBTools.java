@@ -1,4 +1,4 @@
-package com.praisenation.onomo30;
+package com.praisenation.pnonoma30;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -79,4 +79,5 @@ public class DBTools extends SQLiteOpenHelper {
         }
         return myUser;
     }
+
 }
