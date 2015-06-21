@@ -16,6 +16,9 @@ public class DailyLogger {
     /**
      * Populated from the daily log form
      *
+     *
+     * Arraylists should be replaced with Database
+     *
      */
     public DailyLogger(int logID, String nameOfGod, String bibleVerse, String sharedWith, String verseMeaning, String optionalComments)
     {

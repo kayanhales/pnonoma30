@@ -8,6 +8,10 @@ import java.util.ArrayList;
 public class WeeklyLogger {
     /**
      * Should only have 7 daily logs
+     *
+     *
+     *
+     * Arraylists should be replaced with Database
      */
     private int logID;
     private ArrayList<DailyLogger>dailyLogsList;
